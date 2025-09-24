@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0e1e33, #1b2a47);
+  margin: 0;
+  padding: 0;
+  color: #f4f4f4;
+}
+
+#certApp {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #1b2a47;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  color: #00ffff;
+  margin-bottom: 5px;
+}
+
+header .tagline {
+  font-size: 14px;
+  color: #aad8e6;
+}
+
+.section {
+  padding: 15px;
+  background: #0e1e33;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+#certHistorySection {
+  overflow-x: auto;
+}
+
+#certHistoryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #0e1e33;
+  border-radius: 10px;
+  display: block;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#certHistoryTable th, #certHistoryTable td {
+  border: 1px solid #00ffff;
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+  color: #f4f4f4;
+  font-size: 13px;
+}
+
+#certHistoryTable th {
+  background-color: #007BFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#certHistoryTable tr:nth-child(even) {
+  background-color: rgba(0,255,255,0.1);
+}
+
+#certHistoryTable tr:hover {
+  background-color: rgba(0,255,255,0.2);
+}
+
+/* Status dropdown styling */
+.status-select {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #00ffff;
+  background-color: #0e1e33;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.status-select:hover {
+  background-color: rgba(0,255,255,0.1);
+}
+
+@media screen and (max-width: 900px) {
+  #certHistoryTable th, #certHistoryTable td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
